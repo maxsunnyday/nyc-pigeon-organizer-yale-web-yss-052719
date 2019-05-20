@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
     if key == :gender
       hash.each do |gender, names|
         names.each do |name|
-          data[name] = {gender: [gender.to_s]}
+          list[name] = {gender: [gender.to_s]}
+
         end
       end
     end
