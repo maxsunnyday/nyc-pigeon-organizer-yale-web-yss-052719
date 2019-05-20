@@ -15,6 +15,6 @@ def nyc_pigeon_organizer(data)
       list[name][:lives] = place
     end
   end
-  
+
   list
 end
