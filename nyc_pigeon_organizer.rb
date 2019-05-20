@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
       hash.each do |gender, names|
         names.each do |name|
           list[name] = {gender: [gender.to_s]}
+          list[name][:color] = []
         end
       end
     end
@@ -15,6 +16,10 @@ def nyc_pigeon_organizer(data)
       list[name][:lives] = [place]
     end
   end
-
+  data[:color].each do |color, names|
+    names.each do |name|
+      list[]
+    end
+  end
   list
 end
