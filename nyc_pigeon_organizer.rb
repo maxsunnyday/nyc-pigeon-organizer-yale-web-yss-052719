@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   end
   data[:lives].each do |place, names|
     names.each do |name|
-      list[name][:lives] = place
+      list[name][:lives] = [place]
     end
   end
 
