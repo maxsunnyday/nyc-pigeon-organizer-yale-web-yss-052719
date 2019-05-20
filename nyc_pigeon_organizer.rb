@@ -6,7 +6,6 @@ def nyc_pigeon_organizer(data)
       hash.each do |gender, names|
         names.each do |name|
           list[name] = {gender: [gender.to_s]}
-
         end
       end
     end
