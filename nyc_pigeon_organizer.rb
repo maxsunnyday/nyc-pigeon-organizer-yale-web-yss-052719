@@ -10,5 +10,11 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  data[:lives].each do |place, names|
+    names.each do |name|
+      list[name][:lives] = place
+    end
+  end
+  
   list
 end
